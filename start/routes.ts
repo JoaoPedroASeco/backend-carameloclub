@@ -20,19 +20,19 @@
 
 import Route from '@ioc:Adonis/Core/Route'
 
-// User CRUD
-Route.post('/users-create', 'UsersController.create')
-Route.put('/users-update', 'UsersController.update')
-Route.delete('/users-delete', 'UsersController.delete')
-Route.post('/users-list', 'UsersController.list')
+// // User CRUD
+// Route.post('/users-create', 'UsersController.create')
+// Route.put('/users-update', 'UsersController.update')
+// Route.delete('/users-delete', 'UsersController.delete')
+// Route.post('/users-list', 'UsersController.list')
 
-// User Auth
-Route.get('/logout', 'AuthController.logout')
-Route.post('/login', 'AuthController.login')
+// // User Auth
+// Route.get('/logout', 'AuthController.logout')
+// Route.post('/login', 'AuthController.login')
 
 // Gallery Store
-Route.post('/gallery-store', 'GalleriesController.store')
-Route.post('/gallery-update', 'GalleriesController.updateMetadata')
-Route.post('/gallery-delete', 'GalleriesController.delete')
+// Route.post('/gallery-store', 'GalleriesController.store')
+// Route.post('/gallery-update', 'GalleriesController.updateMetadata')
+// Route.post('/gallery-delete', 'GalleriesController.delete')
 Route.post('/gallery-list/:page', 'GalleriesController.list')
 
