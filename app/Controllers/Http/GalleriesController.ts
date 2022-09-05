@@ -67,14 +67,14 @@ export default class GalleriesController {
       if (page - 1 > 0) {
         return {
           data: GalleyList.rows,
-          next: `https://backend-carameloclub.up.railway.app/${parseInt(page) + 1}`,
-          previews: `https://backend-carameloclub.up.railway.app/${parseInt(page) - 1}`,
+          next: `https://backend-carameloclub.up.railway.app/gallery-list/${parseInt(page) + 1}`,
+          previews: `https://backend-carameloclub.up.railway.app/gallery-list/${parseInt(page) - 1}`,
         };
       } else {
         return {
           data: GalleyList.rows,
-          next: `https://backend-carameloclub.up.railway.app/${parseInt(page) + 1}`,
-          previews: `https://backend-carameloclub.up.railway.app/1`,
+          next: `https://backend-carameloclub.up.railway.app/gallery-list/${parseInt(page) + 1}`,
+          previews: `https://backend-carameloclub.up.railway.app/gallery-list/1`,
         };
       }
     } catch (error) {
